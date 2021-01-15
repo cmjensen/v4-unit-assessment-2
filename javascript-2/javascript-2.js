@@ -35,7 +35,11 @@ let foods = [
   and then adding the results together. 
 */
 
-//CODE HERE
+foods.forEach(function(elem, index, arr) {
+  for(let i = 0; i < foods.length; i++) {
+    foods[i].calories = ((foods[i].carbs * 4) + (foods[i].protein * 4) + (foods[i].fat * 9))
+  }
+})
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -80,7 +84,8 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-//CODE HERE
+const saleProducts = products.map(element => element.price + (element.price * .25))
+
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -90,7 +95,9 @@ const products = [
   (Hint: look up the array method 'includes' on MDN)
 */
 
-//CODE HERE
+const blueProducts = products.filter((val, i, arr) => {
+  return val.color.includes('blue')
+})
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -99,7 +106,16 @@ const products = [
   Save the result to a variable called orderTotal.
 */
 
-//CODE HERE
+
+const orderTotal = blueProducts.reduce(function(acc, cur) {
+  totalPrice = 0
+  for(let i = 0; i < blueProducts.length; i++) {
+    totalPrice += blueProducts[i].price 
+  }
+  return totalPrice
+})
+
+	
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -129,7 +145,7 @@ const shippingInfo = {
   that combines the contactInfo and shippingInfo objects.
 */
 
-//CODE HERE
+//CODE`
 
 ////////////////////PROBLEM 6////////////////////
 /*
