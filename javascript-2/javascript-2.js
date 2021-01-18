@@ -84,7 +84,7 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-const saleProducts = products.map(element => element.price + (element.price * .25))
+const saleProducts = products.map(element => element.price - (element.price * .25))
 
 
 ////////////////////PROBLEM 3////////////////////
