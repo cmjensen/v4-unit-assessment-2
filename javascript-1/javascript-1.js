@@ -20,7 +20,7 @@ myArr = [4, 'abc', ['cat', 'dog', 'bird'], 77]
 
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
-foundZ = nestedLetters[5][2][1]
+let foundZ = nestedLetters[5][2][1]
 
 
 ////////////////////PROBLEM 3////////////////////
@@ -190,13 +190,19 @@ for(let i = 0; i < classes.length; i++) {
 */
   
 //DO NOT EDIT CODE BELOW  
+
 const lettersToPair = ['e', 'k', 's', 'a', 'e', 's', 'a', 'n', 'k', 'n']  
-let pairsArray = []
+
 //DO NOT EDIT CODE ABOVE
 
-//CODE HERE
-
-    
+let pairsArray = []
+for(let i = 0; i < lettersToPair.length; i++) {
+    for(let j = i+1; j < lettersToPair.length; j++) {
+      if(lettersToPair [i] === lettersToPair[j]) {
+        pairsArray.push([i, j])
+      }
+    }
+  } 
 
 //////////////////////////////////PROBLEMS 11-14//////////////////////////////////
 /*
