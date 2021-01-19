@@ -7,20 +7,20 @@
     <title>Devmountain Daily</title>
 </head>
 <body>
-    <header> <!-- Devmountain Daily -->
-        <h1>Devmountain Daily</h1>
-    </header>
-
-    <nav> <!-- Home, Topics, Subscribe, Sign In (sticky)-->
-        <ul>
+    <header>
+    <nav>
+        <h1 id="logo">Devmountain Daily</h1>
+        <ul class ="nav-links">
             <li>Home</li>
             <li>Topics</li>
             <li>Subscribe</li>
             <li>Sign In</li>
         </ul>
     </nav>
+    </header>
 
-    <section > <!-- Skills Check 2 -->
+
+    <section class="main-content"> <!-- Skills Check 2 -->
         <h2>Skills Check 2</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Vitae et leo duis ut. Egestas dui id ornare arcu odio ut. Nibh cras pulvinar mattis nunc sed blandit. Ipsum dolor sit amet consectetur adipiscing elit. Dictum sit amet justo donec enim diam vulputate ut. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Orci sagittis eu volutpat odio facilisis.
@@ -31,58 +31,63 @@
         <p>
             Risus nec feugiat in fermentum posuere. Vel quam elementum pulvinar etiam non quam lacus suspendisse. Lorem dolor sed viverra ipsum nunc. Turpis in eu mi bibendum neque egestas. Dignissim diam quis enim lobortis scelerisque fermentum. Quisque non tellus orci ac auctor augue mauris. Quis auctor elit sed vulputate. Cras pulvinar mattis nunc sed blandit libero volutpat. Euismod nisi porta lorem mollis aliquam ut porttitor leo a. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Netus et malesuada fames ac turpis egestas sed tempus. Duis at tellus at urna. Sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Id donec ultrices tincidunt arcu non sodales neque sodales.
         </p>
-
     </section>
 
-    <aside>
-        <section> <!-- Your Name -->
-            <img src="profile.svg">
-            <h2>Your Name</h2>
-        </section>
-        
-        <section> <!-- Popular Articles -->
-            <h3>Popular Articles</h3>
-            <ol>
-                <li>JavaScript 3</li>
-                <li>CSS Tips & Tricks</li>
-                <li>Array Methods</li>
-                <li>JavaScript 2</li>
-                <li>Semantic HTML</li>
-                <li>Best Bootcamps</li>
-                <li>HTML & CSS 2</li>
-                <li>Higher Order Functions</li>
-                <li>Context</li>
-                <li>Flexbox</li>
-            </ol>
-        </section>
-    </aside>
+        <aside class="sidebar">
+            <section> 
+                <div class="profile-box">
+                <img class ="profile-pic" src="profile.svg">
+                <h2>Your Name</h2>
+            </div>
+            </section>
+            
+            <section class="articles-box">
+                <h3 id=#pop-art>Popular Articles</h3>
+                <ol>
+                    <li>JavaScript 3</li>
+                    <li>CSS Tips & Tricks</li>
+                    <li>Array Methods</li>
+                    <li>JavaScript 2</li>
+                    <li>Semantic HTML</li>
+                    <li>Best Bootcamps</li>
+                    <li>HTML & CSS 2</li>
+                    <li>Higher Order Functions</li>
+                    <li>Context</li>
+                    <li>Flexbox</li>
+                </ol>
+            </section>
+        </aside>
+    
 
-    <section> <!-- Image Gallery -->
+    
+
+    <section class="gallery-section">
         <h3>Image Gallery</h3>
         <div>
             <h4>view larger</h4>
         </div>
 
         <div> <!-- Six Images -->
-           <img src="placeholder.svg">
-           <img src="placeholder.svg">
-           <img src="placeholder.svg">
-           <img src="placeholder.svg">
-           <img src="placeholder.svg">
-           <img src="placeholder.svg">
+           <img class="img-gallery" src="placeholder.svg">
+           <img class="img-gallery" src="placeholder.svg">
+           <img class="img-gallery" src="placeholder.svg">
+           <img class="img-gallery" src="placeholder.svg">
+           <img class="img-gallery" src="placeholder.svg">
+           <img class="img-gallery" src="placeholder.svg">
         </div>
     </section>
 
+    <div id="question-box">
+        <p class="p">?</p>
+    </div>
+
     <footer>
-        <p>
+        <p class="bottom-words">
             Learn to Code at Devmountain!
         </p>
-        <div> <!-- Question Bubble (sticky) -->
-            <p>
-                ?
-            </p>
-        </div>
     </footer>
+
+    
 
 
     
